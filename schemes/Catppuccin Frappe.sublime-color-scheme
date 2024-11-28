@@ -1,5 +1,5 @@
 {
-    "name": "Catppuccin",
+    "name": "Catppuccin Frappe",
     "author": "Catppuccin Org",
 
     "variables": {
@@ -33,7 +33,7 @@
 
     "globals": {
         "foreground": "var(text)",
-        "background": "var(base)",
+        "background": "#414559",
         "caret": "var(subtext1)",
         "invisibles": "color(var(overlay2) alpha(0.4))",
         "gutter_foreground": "var(overlay2)",

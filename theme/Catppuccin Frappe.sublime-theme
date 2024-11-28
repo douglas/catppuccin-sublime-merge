@@ -1,0 +1,164 @@
+{
+  "name": "Catppuccin Frappe",
+  "author": "Catppuccin Org",
+
+  "extends": "Merge Dark.sublime-theme",
+  "variables": {
+    // Catppuccin Colors
+    "flavor": "frappe",
+    "rosewater": "#f2d5cf",
+    "flamingo": "#eebebe",
+    "pink": "#f4b8e4",
+    "mauve": "#ca9ee6",
+    "purple": "var(mauve)",
+    "red": "#e78284",
+    "maroon": "#ea999c",
+    "peach": "#ef9f76",
+    "orange": "var(peach)",
+    "yellow": "#e5c890",
+    "green": "#a6d189",
+    "teal": "#81c8be",
+    "sky": "#99d1db",
+    "sapphire": "#85c1dc",
+    "blue": "#8caaee",
+    "lavender": "#babbf1",
+    "text": "#c6d0f5",
+    "subtext1": "#b5bfe2",
+    "subtext0": "#a5adce",
+    "overlay2": "#949cbb",
+    "overlay1": "#838ba7",
+    "overlay0": "#737994",
+    "surface2": "#626880",
+    "surface1": "#51576d",
+    "surface0": "#414559",
+    "base": "#303446",
+    "mantle": "#292c3c",
+    "crust": "#232634",
+
+    // Labels
+		"label_color": "var(subtext0)",
+		"help_label_color": "color(var(text) a(0.6))",
+
+    // Detail panel
+		"detail_panel_bg": "#414559",
+		"field_name_fg": "var(text)",
+		"author_fg": "color(var(--foreground) a(0.4))",
+		"terminator_fg": "var(medium_gray)",
+
+    // Header
+		"title_bar_style": "dark",
+		"header_bg": "#46445E",
+		"header_fg": "var(text)",
+		"header_button_bg": "#414559",
+		"icon_button_fg": "var(text)",
+
+    // Side bar
+		"location_bar_fg": "var(subtext0)",
+		"location_bar_heading_fg": "var(text)",
+		"location_bar_heading_shadow": "black",
+		"location_bar_row_bg-hover": "#414559",
+		"disclosure_fg": "white",
+
+    // Commit list
+		"commit_list_bg": "#303446",
+		"commit_row_bg-hover": "#414559",
+		"commit_summary_fg-primary": "var(text)",
+		"commit_summary_fg-secondary": "var(subtext0)",
+
+    // Location Bar
+	  "side_bar_container_bg": "#2A2C3C",
+
+    // Tabs
+    "repository_tab_bar_bg": "#2A2C3C",
+	  "repository_tab_bar_border_bg": "#414559",
+		"tab_bar_bg": "#2A2C3C",
+		"tab_separator_bg": "#414559",
+
+    // File list
+		"file_header_bg": "color(#242634 l(+ 14%))",
+		"file_header_bg-hover": "#414559",
+
+    // File Diff
+		"hunk_header_bg": "color(var(--background) l(+ 5%))",
+
+    // Table of Contents
+		"table_of_contents_bg": "var(dark_gray-medium)",
+		"table_of_contents_fg": "var(subtext0)",
+		"table_of_contents_heading_fg": "var(text)",
+		"table_of_contents_row_bg": "var(base)",
+
+		// Quick panel
+		"quick_panel_bg": "var(base)",
+		"quick_panel_row_bg": "color(#242634 l(+ 14%)))",
+		"quick_panel_fg": "var(text)",
+		"quick_panel_fg-match": "var(red)",
+		"quick_panel_fg-selected": "var(text)",
+		"quick_panel_fg-selected-match": "var(green)",
+		"quick_panel_path_fg": "var(text)",
+		"quick_panel_path_fg-match": "var(text-heading)",
+		"quick_panel_path_fg-selected": "var(text)",
+		"quick_panel_path_fg-selected-match": "var(text-heading)",
+  },
+  "rules": [
+    {
+			"class": "text_line_control",
+			"layer0.tint": "var(--background)"
+		},
+		{
+			"class": "search_text_control",
+			"layer0.tint": "color(#242634 l(+ 14%))",
+		},
+		{
+			"class": "location_bar_heading",
+			"color": "var(text)",
+		},
+		{
+			"class": "info_area",
+			"layer0.opacity": 0.2,
+			"layer0.tint": "var(medium_gray)",
+		},
+    {
+      "class": "label_control",
+      "color": "var(text)",
+    },
+    {
+      "class": "details_tab_bar",
+      "layer0.tint": "var(base)",
+    },
+    {
+      "class": "tab",
+      "parents": [
+        {
+          "class": "details_tab_bar"
+        }
+      ],
+      "layer0.tint": "#414559"
+    },
+    {
+      "class": "tab",
+      "parents": [
+        {
+          "class": "side_bar_container with_graph"
+        }
+      ],
+      "layer0.tint": "var(base)"
+    },
+    {
+      "class": "tab",
+      "attributes": [
+        "hover"
+      ],
+      "layer1.tint": "var(--background)",
+      "layer1.opacity": {
+        "target": 0.5,
+        "speed": 10,
+        "interpolation": "smoothstep"
+      }
+    },
+    {
+            "class": "location_bar_label",
+            "font.size": "14px",
+            "font.bold": false,
+        },
+  ]
+}
